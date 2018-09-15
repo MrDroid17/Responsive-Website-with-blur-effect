@@ -17,8 +17,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(15px);
-    -webkit-filter: blur(15px);
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
     /* actual image is very bright hence using opacity to decrease brightness */
     opacity: 0.5;
     transition: all 1000ms;
@@ -31,6 +31,11 @@ body {
     opacity: 0.5;
 }
 
+.showcase:hover .showcase__content {
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
 
 /**
 * # Showcase Content
@@ -39,7 +44,7 @@ body {
 .showcase__content {
     position: absolute;
     z-index: 1;
-    top: 8%;
+    top: 5%;
     left: 50%;
     margin-top: 100px;
     margin-left: -145px;
