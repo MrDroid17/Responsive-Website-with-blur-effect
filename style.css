@@ -90,3 +90,30 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+
+/* # Center */
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+
+/* Utilities class */
+
+.bg-dark {
+    background: #333;
+    color: #f4f4f4
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333
+}
