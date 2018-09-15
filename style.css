@@ -157,3 +157,16 @@ footer {
         padding: 1.2rem 1rem;
     }
 }
+
+
+/* # For Smartphone in landscape mode */
+
+@media(max-height: 500px) {
+    .showcase__content--title,
+    .showcase__content--description {
+        display: none;
+    }
+    .showcase__content {
+        top: 0;
+    }
+}
