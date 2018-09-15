@@ -5,6 +5,9 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+
+/* # Showcase background */
+
 .showcase::after {
     content: '';
     height: 100vh;
@@ -14,12 +17,52 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    /* actual image is very bright hence using opacity to decrease brightness */
+    opacity: 0.5;
     transition: all 1000ms;
 }
 
 .showcase:hover::after {
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    /* actual image is very bright hence using opacity to decrease brightness */
+    opacity: 0.5;
+}
+
+
+/**
+* # Showcase Content
+*/
+
+.showcase__content {
+    position: absolute;
+    z-index: 1;
+    top: 8%;
+    left: 50%;
+    margin-top: 100px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.showcase__content--logo {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* 16px = 1rem */
+
+.showcase__content--title {
+    font-size: 2rem;
+    margin-top: 8px;
+}
+
+.showcase__content--description {
+    line-height: 1rem;
+    margin-top: 8px
 }
