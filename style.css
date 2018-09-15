@@ -128,3 +128,32 @@ footer p {
 footer {
     padding: 2rem;
 }
+
+
+/* # for Smartphones */
+
+@media (max-width: 560px) {
+    .showcase::after {
+        height: 50vh;
+    }
+    .showcase__content {
+        top: 5%;
+        margin-top: 5px;
+    }
+    .showcase__content--logo {
+        height: 150px;
+        width: 150px;
+    }
+    .showcase__content--description {
+        display: none;
+    }
+    /* # Stacked each service */
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .services div {
+        border-bottom: #333 dashed 4px;
+        padding: 1.2rem 1rem;
+    }
+}
