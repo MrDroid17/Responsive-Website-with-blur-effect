@@ -117,3 +117,14 @@ body {
     background: #f4f4f4;
     color: #333
 }
+
+
+/* # Footer */
+
+footer p {
+    margin: 0;
+}
+
+footer {
+    padding: 2rem;
+}
