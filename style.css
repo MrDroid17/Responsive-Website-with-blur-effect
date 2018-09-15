@@ -20,7 +20,7 @@ body {
     filter: blur(10px);
     -webkit-filter: blur(10px);
     /* actual image is very bright hence using opacity to decrease brightness */
-    opacity: 0.5;
+    opacity: 0.6;
     transition: all 1000ms;
 }
 
@@ -28,7 +28,7 @@ body {
     filter: blur(0px);
     -webkit-filter: blur(0px);
     /* actual image is very bright hence using opacity to decrease brightness */
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .showcase:hover .showcase__content {
@@ -70,4 +70,23 @@ body {
 .showcase__content--description {
     line-height: 1rem;
     margin-top: 8px
+}
+
+
+/* # Container */
+
+.container {
+    max-width: 920px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+
+/* # Grid */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
 }
